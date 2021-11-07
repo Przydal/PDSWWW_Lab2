@@ -1,0 +1,25 @@
+#wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.letter {
+    border: 2px solid blue;
+    padding: 5px;
+    margin: 2px;
+}
+
+#wrap {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+#passContainer {
+    margin: 10px 0;
+}
+
+#controlContainer {
+    margin: 20px 0 0;
+}
