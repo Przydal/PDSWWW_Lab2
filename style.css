@@ -1,19 +1,39 @@
+body {
+    text-align: center;
+}
+
 #wrap {
+    background-image: url("wheel-of-fortune-background-free-vector.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    float: left;
-    width: 100%;
+    width: 98%;
+    height: 94vh;
+    min-width: 300px;
     border: 1px solid red;
 }
 
 .letter {
-    border: 2px solid blue;
+    top: 0;
+    background-color: azure;
+    border: solid 2px black;
     padding: 5px;
     margin: 2px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    box-shadow: 0px 2px 10px 1px black;
+}
+
+.hidden {
+    color: azure;
 }
 
 #wrap {
     margin: 10px 0;
-    padding: 5px;
+    padding: 15px;
+    text-align: center;
 }
 
 #passContainer {
@@ -22,4 +42,42 @@
 
 #controlContainer {
     margin: 20px 0 0;
+}
+
+#scoreContainer {
+    background-color: azure;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 5px;
+    right: 20px;
+    top: 10px;
+    padding: 5px 10px;
+}
+
+#scoreContainer span {
+    margin: 10px;
+}
+
+.passRow {
+    margin: 25px;
+}
+
+.input--wrong {
+    color: #d50000;
+    background-color: #fff8f8;
+    border-color: #dd5500;
+}
+
+#author {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    height: 20%;
+    width: 20%;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: azure;
+    border-radius: 5px;
 }
